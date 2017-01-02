@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="initGame()" onkeydown="cellClicked(event)">
+    <div class="container">
+        <h1>Sokoban</h1>
+        <div class="wrapper">
+            <h2 class="messages"></h2>
+            <p class="moves">Moves made: <span class="countMoves">0</span></p>
+            <span class="resetLevelButton" onclick="restartLevel()">Reset Level</span>
+            <span class="switchLevelButton" onclick="switchLevel()">Switch Level</span>
+        </div>
+        <table class="boardGame">
+            <tbody id="sokobanBoard"></tbody>
+        </table>
+    </div>
+
+    <!--<h1>Sokoban</h1>
+    <div class="wrapper">
+        <h2 class="messages"></h2>
+        <p>Moves made: <span class="countMoves"></span></p>
+    </div>
+    <table class="boardGame">
+        <tbody id="sokobanBoard"></tbody>
+    </table>-->
+    <script src="js/utils.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+
+</html>
